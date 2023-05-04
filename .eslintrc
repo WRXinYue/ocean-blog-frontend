@@ -1,6 +1,34 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "globals": {
+    "defineEmits": true,
+    "document": true,
+    "localStorage": true,
+    "GLOBAL_VAR": true,
+    "window": true,
+    "defineProps": true,
+    "defineExpose": true,
+    "withDefaults": true
+  },
   "extends": [
     "@antfu",
     "@unocss"
-  ]
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint", "import"],
+  "rules": {
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "vue/multi-word-component-names": "off" // 关闭组件命名规则
+  }
 }

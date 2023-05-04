@@ -22,7 +22,7 @@ import WebfontDownload from 'vite-plugin-webfont-dl'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~/': `${path.resolve(__dirname, 'src')}/`, // 把 @ 指向到 src 目录去
     },
   },
 
